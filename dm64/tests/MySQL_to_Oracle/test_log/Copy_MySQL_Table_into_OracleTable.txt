@@ -1,0 +1,63 @@
+
+c:\Python27\data_migrator_1239>echo y  | c:\Python27\dm_dist_64\20141216_093633\dm64\dm64.exe -w mysql2ora -o 1 -r 1 -t "|" -c TEST.Timestamp_test_from -j "alex" -x "mysql_pwd" -b "test" -n "localhost" -z "C:\Temp\mysql\bin" -g SCOTT/tiger2@orcl -a SCOTT.Timestamp_test_to -e "YYYY-MM-DD HH24.MI.SS" -m "YYYY-MM-DD HH24.MI.SS.FF2" -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" -Z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN" 
+----------------------------------------------------------------------
+MySQL to Oracle DataMigrator (v1.23.9, beta, 2014/12/16 09:36:33) [64bit]
+Copyright (c): 2014 Alex Buzunov, All rigts reserved.
+Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
+----------------------------------------------------------------------
+mysql2ora
+ORA
+####################
+Performing data copy.
+		
+From MySQL:	
+	from db: alex/test/localhost
+	table: TEST.Timestamp_test_from
+	shards:	1
+		
+	To Oracle:	
+		to db: SCOTT@orcl
+		to table: SCOTT.Timestamp_test_to
+		
+####################
+Are you sure you want to proceed?(y/n): 
+
+Thread-0 (0, 5172L, 44)
+############################################################
+Copy stats (1 threads, 1 shards):
+############################################################
+2014-12-16 09:36:50,046 - mysql2ora - INFO - Fetching table info...
+2014-12-16 09:36:50,068 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-16 09:36:50,068 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-16 09:36:50,068 - mysql2ora - INFO - Done.
+2014-12-16 09:36:50,068 - mysql2ora - INFO - Counting rows in source...
+2014-12-16 09:36:50,088 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-16 09:36:50,088 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-16 09:36:50,088 - mysql2ora - INFO - 44
+2014-12-16 09:36:50,088 - mysql2ora - INFO - Done.
+2014-12-16 09:36:50,088 - mysql2ora - INFO - Fetching source column names...
+2014-12-16 09:36:50,109 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-16 09:36:50,109 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-16 09:36:50,109 - mysql2ora - INFO - Got 7 columns.
+2014-12-16 09:36:50,109 - mysql2ora - INFO - Done.
+2014-12-16 09:36:50,111 - mysql2ora - INFO - Starting Thread-0
+2014-12-16 09:36:50,111 - mysql2ora - INFO - Thread-0 processing Shard-0
+2014-12-16 09:36:50,111 - mysql2ora - INFO - Extracting data...
+2014-12-16 09:36:50,128 - mysql2ora - INFO - Done
+2014-12-16 09:36:50,186 - mysql2ora - INFO - Loading data...
+2014-12-16 09:36:50,548 - mysql2ora - INFO - SQL*Loader status =0
+2014-12-16 09:36:50,548 - mysql2ora - INFO - Done
+2014-12-16 09:36:50,549 - mysql2ora - INFO - spool file deleted.
+2014-12-16 09:36:50,549 - mysql2ora - INFO - Thread-0 exit status 0
+2014-12-16 09:36:50,549 - mysql2ora - INFO - Exiting Thread-0
+2014-12-16 09:36:50,549 - mysql2ora - INFO - Shard-0/0:          44 rows
+2014-12-16 09:36:50,549 - mysql2ora - INFO - TOTAL Bytes:        5172 Bytes
+2014-12-16 09:36:50,549 - mysql2ora - INFO - TOTAL Rows:           44 Rows
+2014-12-16 09:36:50,549 - mysql2ora - INFO - Done.
+2014-12-16 09:36:50,549 - mysql2ora - INFO - Elapsed: 00:00:00

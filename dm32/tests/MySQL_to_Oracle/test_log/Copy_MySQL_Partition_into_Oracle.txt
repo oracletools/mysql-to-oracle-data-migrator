@@ -1,0 +1,42 @@
+
+c:\Python27\data_migrator_1239>echo y  | c:\Python27\dm_dist_32\20141215_183158\dm32\dm32.exe -w mysql2ora -o 1 -r 1 -t "|" -c TEST.Partitioned_test_from -P rx201411 -j "alex" -x "mysql_pwd" -b "test" -n "localhost" -z "C:\Temp\mysql\bin" -g SCOTT/tiger2@orcl -a SCOTT.Timestamp_test_to -e "YYYY-MM-DD HH24.MI.SS" -m "YYYY-MM-DD HH24.MI.SS.FF2" -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" -Z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN" 
+----------------------------------------------------------------------
+MySQL to Oracle DataMigrator (v1.23.9, beta, 2014/12/15 18:31:58) [32bit]
+Copyright (c): 2014 Alex Buzunov, All rigts reserved.
+Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
+----------------------------------------------------------------------
+mysql2ora
+ORA
+####################
+Performing data copy.
+		
+From MySQL:	
+	from db: alex/test/localhost
+	table: TEST.Partitioned_test_from
+partition: rx201411
+	shards:	1
+		
+	To Oracle:	
+		to db: SCOTT@orcl
+		to table: SCOTT.Timestamp_test_to
+		
+####################
+Are you sure you want to proceed?(y/n): 
+2014-12-15 18:32:04,733 - mysql2ora - INFO - Fetching table info...
+2014-12-15 18:32:04,765 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-15 18:32:04,765 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-15 18:32:04,765 - mysql2ora - INFO - Done.
+2014-12-15 18:32:04,765 - mysql2ora - INFO - Verifying partition...
+2014-12-15 18:32:04,812 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+2014-12-15 18:32:04,812 - mysql2ora - WARNING - Warning: Using a password on the command line interface can be insecure.
+
+Traceback (most recent call last):
+  File "<string>", line 239, in <module>
+  File "c:\Python27\data_migrator_1239\build\dm32\out00-PYZ.pyz\template.v101.spool_and_load", line 157, in set_payload
+  File "c:\Python27\data_migrator_1239\build\dm32\out00-PYZ.pyz\pipeline.v101.from_mysql", line 557, in set_payload
+  File "c:\Python27\data_migrator_1239\build\dm32\out00-PYZ.pyz\pipeline.v101.from_mysql", line 270, in set_part_table_payload
+  File "c:\Python27\data_migrator_1239\build\dm32\out00-PYZ.pyz\pipeline.v101.from_mysql", line 154, in detect_partition
+AssertionError: Partition "rx201411" does not exists in table TEST.Partitioned_test_from

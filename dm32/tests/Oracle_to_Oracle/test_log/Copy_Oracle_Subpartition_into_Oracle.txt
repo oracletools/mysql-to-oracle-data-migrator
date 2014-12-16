@@ -1,0 +1,20 @@
+
+c:\Python27\data_migrator_1239>echo y  | c:\Python27\dm_dist_32\20141215_181224\dm32\dm32.exe -w ora2ora -o 1 -r 1 -t "|" -c SCOTT.Sub_Partitioned_test_from -S part_15_sp1 -f SCOTT/tiger2@orcl -e "YYYY-MM-DD HH24.MI.SS" -m "YYYY-MM-DD HH24.MI.SS.FF2" -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" -z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN" -g SCOTT/tiger2@orcl -a SCOTT.Timestamp_test_to -e "YYYY-MM-DD HH24.MI.SS" -m "YYYY-MM-DD HH24.MI.SS.FF2" -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" -Z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN" 
+----------------------------------------------------------------------
+MySQL to Oracle DataMigrator (v1.23.9, beta, 2014/12/15 18:12:24) [32bit]
+Copyright (c): 2014 Alex Buzunov, All rigts reserved.
+Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
+----------------------------------------------------------------------
+########################################
+########################################
+
+Copy vector "ora2ora" is not supported.
+
+########################################
+########################################
+For detailed help use one of the options:
+
+From MySQL:
+
+	To Oracle              : dm32.exe -h mysql2ora
+

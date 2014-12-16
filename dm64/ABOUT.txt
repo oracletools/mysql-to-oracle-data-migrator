@@ -1,0 +1,19 @@
+##
+##dm64.exe -h ABOUT 
+##
+----------------------------------------------------------------------
+MySQL to Oracle DataMigrator (v1.23.9, beta, 2014/12/16 09:36:33) [64bit]
+Copyright (c): 2014 Alex Buzunov, All rigts reserved.
+Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
+----------------------------------------------------------------------
+#
+#
+#
+# "MySQL to Oracle DataMigrator" version 1.23.9 (64bit)
+#
+# 
+#
+#
+#
+
+
