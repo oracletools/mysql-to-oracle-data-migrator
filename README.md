@@ -1,11 +1,15 @@
 ##
-##dm32.exe -h ALL 
-
+## dm32.exe -h ALL 
+```
 ----------------------------------------------------------------------
 MySQL to Oracle DataMigrator (v1.23.9, beta, 2014/12/16 09:36:33) [32bit]
 Copyright (c): 2014 Alex Buzunov, All rigts reserved.
 Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
 ----------------------------------------------------------------------
+
+```
+
+```
 From MySQL:
 
 Set following command line arguments to copy from MySQL to Oracle:
@@ -738,3 +742,16 @@ Use case name: MYSQL_TimezoneQueryFile_to_ORA_Table
   -m "YYYY-MM-DD HH24.MI.SS.FF2" ^
   -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" ^
   -Z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN"
+  ```
+  
+  
+  ## Teardown
+https://github.com/pydemo/teardown
+
+[<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png">](https://www.buymeacoffee.com/0nJ32Xg)
+
+## Snowpipe
+
+https://github.com/pydemo/Snowpipe-For-SQLServer
+
+
